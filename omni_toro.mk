@@ -5,8 +5,9 @@ PRODUCT_RELEASE_NAME := GN-CDMA
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Inherit some common CM stuff.
+# Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/cdma.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/toro/aosp_toro.mk)
